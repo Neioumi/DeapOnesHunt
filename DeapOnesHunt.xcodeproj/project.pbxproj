@@ -15,6 +15,10 @@
 		58B6433B1B53D5AA00962C36 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58B6433A1B53D5AA00962C36 /* Images.xcassets */; };
 		58B6433E1B53D5AA00962C36 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58B6433C1B53D5AA00962C36 /* LaunchScreen.xib */; };
 		58B6434A1B53D5AA00962C36 /* DeapOnesHuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B643491B53D5AA00962C36 /* DeapOnesHuntTests.swift */; };
+		58B643541B53DAB700962C36 /* GameSKView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B643531B53DAB700962C36 /* GameSKView.swift */; };
+		58B643561B53DE1400962C36 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B643551B53DE1400962C36 /* GameOverScene.swift */; };
+		58B6435A1B53E22800962C36 /* TitleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B643591B53E22800962C36 /* TitleScene.swift */; };
+		58B6435C1B53F51200962C36 /* dummyEnemmy.png in Resources */ = {isa = PBXBuildFile; fileRef = 58B6435B1B53F51200962C36 /* dummyEnemmy.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		58B643431B53D5AA00962C36 /* DeapOnesHuntTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeapOnesHuntTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B643481B53D5AA00962C36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58B643491B53D5AA00962C36 /* DeapOnesHuntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeapOnesHuntTests.swift; sourceTree = "<group>"; };
+		58B643531B53DAB700962C36 /* GameSKView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSKView.swift; sourceTree = "<group>"; };
+		58B643551B53DE1400962C36 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		58B643591B53E22800962C36 /* TitleScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleScene.swift; sourceTree = "<group>"; };
+		58B6435B1B53F51200962C36 /* dummyEnemmy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dummyEnemmy.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +89,14 @@
 		58B6432C1B53D5AA00962C36 /* DeapOnesHunt */ = {
 			isa = PBXGroup;
 			children = (
+				58B6435B1B53F51200962C36 /* dummyEnemmy.png */,
 				58B6432F1B53D5AA00962C36 /* AppDelegate.swift */,
 				58B643311B53D5AA00962C36 /* GameScene.sks */,
+				58B643591B53E22800962C36 /* TitleScene.swift */,
 				58B643331B53D5AA00962C36 /* GameScene.swift */,
+				58B643551B53DE1400962C36 /* GameOverScene.swift */,
 				58B643351B53D5AA00962C36 /* GameViewController.swift */,
+				58B643531B53DAB700962C36 /* GameSKView.swift */,
 				58B643371B53D5AA00962C36 /* Main.storyboard */,
 				58B6433A1B53D5AA00962C36 /* Images.xcassets */,
 				58B6433C1B53D5AA00962C36 /* LaunchScreen.xib */,
@@ -200,6 +212,7 @@
 			files = (
 				58B6433E1B53D5AA00962C36 /* LaunchScreen.xib in Resources */,
 				58B6433B1B53D5AA00962C36 /* Images.xcassets in Resources */,
+				58B6435C1B53F51200962C36 /* dummyEnemmy.png in Resources */,
 				58B643321B53D5AA00962C36 /* GameScene.sks in Resources */,
 				58B643391B53D5AA00962C36 /* Main.storyboard in Resources */,
 			);
@@ -219,9 +232,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58B643561B53DE1400962C36 /* GameOverScene.swift in Sources */,
 				58B643341B53D5AA00962C36 /* GameScene.swift in Sources */,
 				58B643361B53D5AA00962C36 /* GameViewController.swift in Sources */,
+				58B643541B53DAB700962C36 /* GameSKView.swift in Sources */,
 				58B643301B53D5AA00962C36 /* AppDelegate.swift in Sources */,
+				58B6435A1B53E22800962C36 /* TitleScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
