@@ -19,7 +19,7 @@ I'm trying to make a iPhone app with Swift.
 * [x] Menu
 * [x] Game
 * [x] Game Over
-* [ ] Info
+* [x] Info
 
 
 ## Want to try optional functions

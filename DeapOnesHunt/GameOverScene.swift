@@ -11,6 +11,7 @@ import SpriteKit
 class GameOverScene: SKScene {
     let gameOverLabel = SKLabelNode(fontNamed: "Verdana")
     let replayLabel = SKLabelNode(fontNamed: "Verdana-bold")
+    let menuLabel = SKLabelNode(fontNamed: "Verdana-bold")
 
     override func didMoveToView(view: SKView) {
         self.backgroundColor = UIColor.orangeColor()
@@ -26,8 +27,15 @@ class GameOverScene: SKScene {
         replayLabel.text = "Replay"
         replayLabel.fontSize = 60
         replayLabel.fontColor = UIColor.redColor()
-        replayLabel.position = CGPoint(x: 375, y: 300)
+        replayLabel.position = CGPoint(x: 375, y: 500)
         self.addChild(replayLabel)
+        
+        // Menu Label
+        menuLabel.text = "Menu"
+        menuLabel.fontSize = 60
+        menuLabel.fontColor = UIColor.redColor()
+        menuLabel.position = CGPoint(x: 375, y: 300)
+        self.addChild(menuLabel)
         
         // Score
         let scoreLabel = SKLabelNode(fontNamed: "Verdana")
@@ -50,8 +58,16 @@ class GameOverScene: SKScene {
             let location = touch.locationInNode(self)
             let touchNode = self.nodeAtPoint(location)
             
-            // Back to Title Scene
+            // Back to Game Scene
             if touchNode == replayLabel {
+                let scene = GameScene(size: self.size)
+                let skView = self.view as SKView!
+                scene.scaleMode = SKSceneScaleMode.AspectFill
+                skView.presentScene(scene)
+            }
+            
+            // Back to Title Scene
+            if touchNode == menuLabel {
                 let scene = TitleScene(size: self.size)
                 let skView = self.view as SKView!
                 scene.scaleMode = SKSceneScaleMode.AspectFill
