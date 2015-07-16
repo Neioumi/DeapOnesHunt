@@ -1,5 +1,5 @@
 //
-//  GameInfo.swift
+//  InfoScene.swift
 //  DeapOnesHunt
 //
 //  Created by biyo on 2015/07/15.
