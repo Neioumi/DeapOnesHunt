@@ -19,6 +19,7 @@
 		58B643561B53DE1400962C36 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B643551B53DE1400962C36 /* GameOverScene.swift */; };
 		58B6435A1B53E22800962C36 /* TitleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B643591B53E22800962C36 /* TitleScene.swift */; };
 		58B6435C1B53F51200962C36 /* dummyEnemmy.png in Resources */ = {isa = PBXBuildFile; fileRef = 58B6435B1B53F51200962C36 /* dummyEnemmy.png */; };
+		58DC62B61B57EF57002D2479 /* 9V.caf in Resources */ = {isa = PBXBuildFile; fileRef = 58DC62B51B57EF57002D2479 /* 9V.caf */; };
 		58F913C31B5684840069FF19 /* InfoScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F913C21B5684840069FF19 /* InfoScene.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		58B643551B53DE1400962C36 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 		58B643591B53E22800962C36 /* TitleScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleScene.swift; sourceTree = "<group>"; };
 		58B6435B1B53F51200962C36 /* dummyEnemmy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dummyEnemmy.png; sourceTree = "<group>"; };
+		58DC62B51B57EF57002D2479 /* 9V.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 9V.caf; sourceTree = "<group>"; };
 		58F913C21B5684840069FF19 /* InfoScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,7 +93,7 @@
 		58B6432C1B53D5AA00962C36 /* DeapOnesHunt */ = {
 			isa = PBXGroup;
 			children = (
-				58B6435B1B53F51200962C36 /* dummyEnemmy.png */,
+				58DC62B71B57EF6B002D2479 /* Resource Files */,
 				58B6432F1B53D5AA00962C36 /* AppDelegate.swift */,
 				58B643311B53D5AA00962C36 /* GameScene.sks */,
 				58B643591B53E22800962C36 /* TitleScene.swift */,
@@ -131,6 +133,15 @@
 				58B643481B53D5AA00962C36 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		58DC62B71B57EF6B002D2479 /* Resource Files */ = {
+			isa = PBXGroup;
+			children = (
+				58B6435B1B53F51200962C36 /* dummyEnemmy.png */,
+				58DC62B51B57EF57002D2479 /* 9V.caf */,
+			);
+			name = "Resource Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +227,7 @@
 				58B6433E1B53D5AA00962C36 /* LaunchScreen.xib in Resources */,
 				58B6433B1B53D5AA00962C36 /* Images.xcassets in Resources */,
 				58B6435C1B53F51200962C36 /* dummyEnemmy.png in Resources */,
+				58DC62B61B57EF57002D2479 /* 9V.caf in Resources */,
 				58B643321B53D5AA00962C36 /* GameScene.sks in Resources */,
 				58B643391B53D5AA00962C36 /* Main.storyboard in Resources */,
 			);
