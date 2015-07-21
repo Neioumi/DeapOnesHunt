@@ -7,6 +7,7 @@
 //
 
 import SpriteKit
+import AVFoundation
 
 class GameScene: SKScene {
     
@@ -51,6 +52,11 @@ class GameScene: SKScene {
         scoreLabel.fontColor = SKColor.blackColor()
         scoreLabel.position = CGPoint(x: 40, y: 1250)
         self.addChild(scoreLabel)
+        
+        // Sound
+        var sound = SKAction.playSoundFileNamed("9V.caf", waitForCompletion: true)
+        var actionRepeatSound = SKAction.repeatActionForever(sound)
+        self.runAction(actionRepeatSound)
         
         // Go to Game Over Scene (Dummy button for dev)
         dummyGameOverLabel.text = "Move to Game Over"
