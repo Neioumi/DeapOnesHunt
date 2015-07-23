@@ -9,6 +9,8 @@
 import SpriteKit
 import AVFoundation
 
+private var audioPlayer: AVAudioPlayer!
+
 class GameScene: SKScene {
     
     // Dummy Enemy
@@ -21,6 +23,20 @@ class GameScene: SKScene {
     
     // Dummy GameOver Label
     let dummyGameOverLabel = SKLabelNode(fontNamed: "Verdana-bold")
+    
+    // Audio
+    let BackgroundMusicSound = "9V.caf"
+
+    private func setUpAudio() {
+        if (audioPlayer == nil) {
+            let audioPath = NSBundle.mainBundle().URLForResource(BackgroundMusicSound, withExtension: nil)
+            audioPlayer = AVAudioPlayer(contentsOfURL: audioPath, error:nil)
+            audioPlayer.numberOfLoops = -1
+        }
+        if (!audioPlayer.playing) {
+            audioPlayer.play()
+        }
+    }
 
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
@@ -54,9 +70,7 @@ class GameScene: SKScene {
         self.addChild(scoreLabel)
         
         // Sound
-        var sound = SKAction.playSoundFileNamed("9V.caf", waitForCompletion: true)
-        var actionRepeatSound = SKAction.repeatActionForever(sound)
-        self.runAction(actionRepeatSound)
+        setUpAudio()
         
         // Go to Game Over Scene (Dummy button for dev)
         dummyGameOverLabel.text = "Move to Game Over"
